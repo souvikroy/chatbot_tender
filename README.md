@@ -1,5 +1,10 @@
 # 🤖 Tender Information Extraction API
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-chatbot_tender-blue?logo=github)](https://github.com/souvikroy/chatbot_tender)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue?logo=docker)](Dockerfile)
+[![Netlify](https://img.shields.io/badge/Netlify-Deploy-success?logo=netlify)](netlify.toml)
+
 A comprehensive API for extracting and analyzing information from tender documents using AI, supporting both Docker deployment and Netlify serverless functions.
 
 ## 🚀 Features
@@ -9,6 +14,34 @@ A comprehensive API for extracting and analyzing information from tender documen
 - **Dual Deployment**: Supports both Docker containers and Netlify serverless functions
 - **Health Monitoring**: Built-in health checks and monitoring endpoints
 - **CORS Enabled**: Ready for web application integration
+
+## ⚡ Quick Start
+
+### Clone the Repository
+```bash
+git clone https://github.com/souvikroy/chatbot_tender.git
+cd chatbot_tender
+```
+
+### Setup Environment Variables
+```bash
+# Copy the example environment file
+cp .env.example .env
+# Edit .env with your actual API keys and database connection
+```
+
+### Deploy with Docker
+```bash
+docker-compose up --build
+# Access at http://localhost:8000
+```
+
+### Deploy with Netlify
+```bash
+npm install
+netlify deploy --prod
+# Follow the prompts and set environment variables
+```
 
 ## 📁 Project Structure
 
