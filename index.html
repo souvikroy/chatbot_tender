@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tender Information Extraction API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 15px 0;
+        }
+        .method {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .url {
+            font-family: monospace;
+            background: #e9ecef;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .example {
+            background: #e8f5e8;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Tender Information Extraction API</h1>
+        
+        <p>Welcome to the Tender Information Extraction API! This service helps you extract and analyze information from tender documents using AI.</p>
+        
+        <h2>📡 Available Endpoints</h2>
+        
+        <div class="endpoint">
+            <div class="method">GET</div>
+            <div class="url">/api/health</div>
+            <p>Health check endpoint to verify the API is running.</p>
+            <div class="example">
+                <strong>Example Response:</strong>
+                <pre><code>{
+  "status": "healthy",
+  "message": "Tender Information Extraction API is running on Netlify",
+  "timestamp": "2025-07-06T05:23:44.000Z"
+}</code></pre>
+            </div>
+        </div>
+        
+        <div class="endpoint">
+            <div class="method">POST</div>
+            <div class="url">/api/ask</div>
+            <p>Ask questions about tender documents by providing a tender ID and question.</p>
+            <div class="example">
+                <strong>Request Body:</strong>
+                <pre><code>{
+  "tender_id": "your-tender-id",
+  "question": "What are the technical requirements?"
+}</code></pre>
+                <strong>Example Response:</strong>
+                <pre><code>{
+  "answer": "Based on the tender document, the technical requirements include..."
+}</code></pre>
+            </div>
+        </div>
+        
+        <h2>🚀 Getting Started</h2>
+        
+        <ol>
+            <li>Test the health endpoint: <code>GET /api/health</code></li>
+            <li>Find a tender ID from your database</li>
+            <li>Send a POST request to <code>/api/ask</code> with your question</li>
+        </ol>
+        
+        <h2>🛠️ Development</h2>
+        
+        <p>This API is built with:</p>
+        <ul>
+            <li>🐍 <strong>Backend:</strong> Python + FastAPI (Docker)</li>
+            <li>☁️ <strong>Serverless:</strong> Netlify Functions (Node.js)</li>
+            <li>🧠 <strong>AI:</strong> Google Gemini</li>
+            <li>🗄️ <strong>Database:</strong> MongoDB</li>
+        </ul>
+        
+        <p>The API supports both Docker deployment and Netlify serverless functions for maximum flexibility.</p>
+        
+        <div style="text-align: center; margin-top: 30px; color: #666;">
+            <p>🔗 <a href="/docs" target="_blank">View API Documentation</a></p>
+        </div>
+    </div>
+</body>
+</html>

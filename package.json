@@ -1,0 +1,21 @@
+{
+  "name": "tender-extraction-api",
+  "version": "1.0.0",
+  "description": "Tender Information Extraction API for Netlify",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Build completed'",
+    "dev": "netlify dev",
+    "deploy": "netlify deploy",
+    "deploy:prod": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "keywords": ["tender", "extraction", "api", "netlify", "serverless"],
+  "author": "",
+  "license": "MIT"
+}
